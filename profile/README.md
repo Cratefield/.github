@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Cratefield/.github/main/assets/org-banner.png" alt="Cratefield — a modular backend in Rust. Fits almost every app." width="100%">
+  <img src="https://raw.githubusercontent.com/Cratefield/.github/main/assets/org-banner.png" alt="Cratefield — a managed backend in Rust. Fits almost every app." width="100%">
 </p>
 
 <p align="center">
@@ -12,6 +12,7 @@
   <sub>
     <a href="https://cratefield.com">Site</a> &nbsp;·&nbsp;
     <a href="https://cratefield.com/platform/">Platform</a> &nbsp;·&nbsp;
+    <a href="https://cratefield.com/pricing/">Pricing</a> &nbsp;·&nbsp;
     <a href="https://cratefield.com/isolation/">Isolation</a> &nbsp;·&nbsp;
     <a href="https://cratefield.com/architecture/">Architecture</a> &nbsp;·&nbsp;
     <a href="https://cratefield.com/modules/">Modules</a> &nbsp;·&nbsp;
@@ -25,10 +26,10 @@
 ## A backend you compile, not a platform you configure.
 
 Pick the modules your product needs. They are Rust crates. They compile into one
-stateless Worker with its own database, and that Worker runs in **your**
-Cloudflare account, not ours.
+stateless backend with its own database, and we run it: builds, migrations,
+secrets, domains, certificates, monitoring.
 
-Your backend is a `Cargo.toml`. Your infrastructure is yours.
+Your backend is a `Cargo.toml`. The core is MIT, and the exit is documented.
 
 ---
 
@@ -39,10 +40,11 @@ This matters more than anything else on this page, so it is first.
 | | What it is | Status |
 | :--- | :--- | :--- |
 | **Harness** | The open-source Rust core. Ten crates, MIT, in [`Factory-Zero/harness`](https://github.com/Factory-Zero/harness). Readable and runnable today. | `SHIPPING` |
-| **Cratefield** | The managed control plane that would build a Harness composition and deploy it into the customer's own Cloudflare account. | `PLANNED` |
+| **Cratefield** | The managed service: builds, migrations, secrets, domains, certificates and monitoring, in either of two deployment modes. | `PLANNED` |
 
-The control plane is not built. Not a line of it. Everything on the site and in
-this org that describes it is written in the conditional, on purpose.
+The managed service is not built. Not a line of it. Everything on the site and
+in this org that describes it is written in the conditional, on purpose. There
+is no published price either, and none is estimated anywhere.
 
 Three labels are used everywhere, and they govern the tense of the sentence
 around them:
@@ -84,10 +86,11 @@ Misconfiguration fails `cargo test`, not production.
 no registry service, no feature flags in a dashboard. The binary contains
 exactly the modules you listed.
 
-**2. Your account, your bill, your data.** The control plane would hold a
-scoped Cloudflare API token you issue and can revoke in one click. Cloudflare
-bills you directly. If you fire us, the Worker, the database and the domain keep
-running — there is no migration, because nothing was ever on our side.
+**2. Managed end to end, and reversible.** We would run the parts nobody wants
+to run: builds, migrations, secrets, domains, certificates and monitoring. What
+we would not do is trap you. The composition file and the Cargo manifest are
+yours, the core is MIT, and the same modules run as a native binary you host
+yourself. Leaving is a deploy, not a migration project.
 
 **3. Isolation is the database boundary, not a policy language.** Every tenant
 gets its **own** database. Never schema-per-tenant, never shared tables, no
@@ -160,8 +163,8 @@ The full comparison, including where Supabase is the better answer, is at
 | Postgres adapter and native runtime | `DESIGNED` | [#18–#21](https://github.com/Factory-Zero/harness/issues/18) |
 | Auth: passkeys, Google, Apple, Meta, password, magic links, OAuth 2.1 + PKCE, ES256 JWTs with JWKS | `DESIGNED` | [22 issues](https://github.com/Factory-Zero/harness/issues?q=is%3Aissue+auth) |
 | Two-tier secrets, envelope encryption, KMS trait, tamper-evident audit log | `DESIGNED` | [#23](https://github.com/Factory-Zero/harness/issues/23), [#24](https://github.com/Factory-Zero/harness/issues/24) |
-| The Cratefield control plane | `PLANNED` | not started |
-| Hosted on our account, via Workers for Platforms | `PLANNED` | not started |
+| The Cratefield managed service | `PLANNED` | not started |
+| Hosted on our infrastructure, customer domains via custom hostnames | `PLANNED` | not started |
 
 The roadmap is the issue tracker. There is no private version of it.
 
