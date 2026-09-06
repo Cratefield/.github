@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://cratefield.com"><img src="https://img.shields.io/badge/CRATEFIELD.COM-LIVE-4C6FFF?style=for-the-badge&labelColor=0A0A0B" alt="cratefield.com"></a>
-  <a href="https://github.com/Factory-Zero/harness"><img src="https://img.shields.io/badge/HARNESS-SHIPPING-EDEBE6?style=for-the-badge&labelColor=0A0A0B" alt="Harness: shipping"></a>
+  <a href="https://github.com/Cratefield/harness"><img src="https://img.shields.io/badge/HARNESS-SHIPPING-EDEBE6?style=for-the-badge&labelColor=0A0A0B" alt="Harness: shipping"></a>
   <img src="https://img.shields.io/badge/CONTROL%20PLANE-PLANNED-8A8A8E?style=for-the-badge&labelColor=0A0A0B" alt="Control plane: planned">
 </p>
 
@@ -39,7 +39,7 @@ This matters more than anything else on this page, so it is first.
 
 | | What it is | Status |
 | :--- | :--- | :--- |
-| **Harness** | The open-source Rust core. Ten crates, MIT, in [`Factory-Zero/harness`](https://github.com/Factory-Zero/harness). Readable and runnable today. | `SHIPPING` |
+| **Harness** | The open-source Rust core. Ten crates, MIT, in [`Cratefield/harness`](https://github.com/Cratefield/harness). Readable and runnable today. | `SHIPPING` |
 | **Cratefield** | The managed service: builds, migrations, secrets, domains, certificates and monitoring, in either of two deployment modes. | `PLANNED` |
 
 The managed service is not built. Not a line of it. Everything on the site and
@@ -159,10 +159,10 @@ The full comparison, including where Supabase is the better answer, is at
 
 | Capability | Status | Where |
 | :--- | :--- | :--- |
-| Harness core, Cloudflare runtime, adapters, two modules, `fz` CLI, conformance kit | `SHIPPING` | [harness](https://github.com/Factory-Zero/harness) |
-| Postgres adapter and native runtime | `DESIGNED` | [#18–#21](https://github.com/Factory-Zero/harness/issues/18) |
-| Auth: passkeys, Google, Apple, Meta, password, magic links, OAuth 2.1 + PKCE, ES256 JWTs with JWKS | `DESIGNED` | [22 issues](https://github.com/Factory-Zero/harness/issues?q=is%3Aissue+auth) |
-| Two-tier secrets, envelope encryption, KMS trait, tamper-evident audit log | `DESIGNED` | [#23](https://github.com/Factory-Zero/harness/issues/23), [#24](https://github.com/Factory-Zero/harness/issues/24) |
+| Harness core, Cloudflare runtime, adapters, two modules, `fz` CLI, conformance kit | `SHIPPING` | [harness](https://github.com/Cratefield/harness) |
+| Postgres adapter and native runtime | `DESIGNED` | [#18–#21](https://github.com/Cratefield/harness/issues/18) |
+| Auth: passkeys, Google, Apple, Meta, password, magic links, OAuth 2.1 + PKCE, ES256 JWTs with JWKS | `DESIGNED` | [22 issues](https://github.com/Cratefield/harness/issues?q=is%3Aissue+auth) |
+| Two-tier secrets, envelope encryption, KMS trait, tamper-evident audit log | `DESIGNED` | [#23](https://github.com/Cratefield/harness/issues/23), [#24](https://github.com/Cratefield/harness/issues/24) |
 | The Cratefield managed service | `PLANNED` | not started |
 | Hosted on our infrastructure, customer domains via custom hostnames | `PLANNED` | not started |
 
@@ -176,7 +176,7 @@ The roadmap is the issue tracker. There is no private version of it.
 | :--- | :--- |
 | [**website**](https://github.com/Cratefield/website) | [cratefield.com](https://cratefield.com). Static HTML, no build step, no dependencies |
 | **.github** | This page and the mark |
-| [**Factory-Zero/harness**](https://github.com/Factory-Zero/harness) | The open-source Rust core. Lives in the Factory Zero org, MIT |
+| [**harness**](https://github.com/Cratefield/harness) | The open-source Rust core. Ten crates, MIT. Moved here from the Factory Zero organisation in September 2026 |
 
 ---
 
