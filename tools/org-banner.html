@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Source for assets/org-banner.png. Regenerate with tools/render.sh -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #0A0A0B; width: 1280px; height: 440px; overflow: hidden; }
+  .banner { position: relative; width: 1280px; height: 440px; color: #EDEBE6; font-family: Archivo, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .mesh {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(#16161a 1px, transparent 1px), linear-gradient(90deg, #16161a 1px, transparent 1px);
+    background-size: 48px 48px;
+    -webkit-mask-image: radial-gradient(ellipse 60% 100% at 76% 45%, #000 25%, transparent 100%);
+  }
+  .content { position: relative; height: 100%; display: grid; grid-template-rows: auto 1fr auto; padding: 48px 60px; }
+  .top { display: flex; align-items: center; gap: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 15px; letter-spacing: .22em; font-weight: 500; }
+  h1 { margin: 0; align-self: center; max-width: 660px; font-weight: 700; font-size: 56px; line-height: 1.02; letter-spacing: -.035em; }
+  h1 span { color: #8A8A8E; }
+  .bottom { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: .12em; color: #8A8A8E; }
+  .rule { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: #4C6FFF; }
+  /* The field motif: modules and ports resolving into one binary. */
+  .field { position: absolute; right: 60px; top: 118px; display: grid; grid-template-columns: repeat(4, 52px); gap: 6px; }
+  .field i { display: block; width: 52px; height: 52px; border: 1px solid #2A2A2E; background: #0E0E10; }
+  .field i.on { border-color: #4C6FFF; background: #141416; }
+  .out { position: absolute; right: 60px; top: 372px; width: 226px; border: 1px solid #EDEBE6; background: #0E0E10; padding: 9px 12px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #EDEBE6; text-align: center; }
+  .arrow { position: absolute; right: 168px; top: 344px; color: #4C6FFF; font-family: 'IBM Plex Mono', monospace; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="mesh"></div>
+  <div class="field" id="field"></div>
+  <div class="arrow">&darr;</div>
+  <div class="out">acme_backend.wasm</div>
+  <div class="content">
+    <div class="top">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="6" height="6" fill="#EDEBE6"/><rect x="9" y="1" width="6" height="6" fill="#EDEBE6"/><rect x="17" y="1" width="6" height="6" fill="#3A3A3F"/><rect x="1" y="9" width="6" height="6" fill="#EDEBE6"/><rect x="9" y="9" width="6" height="6" fill="#4C6FFF"/><rect x="17" y="9" width="6" height="6" fill="#EDEBE6"/><rect x="1" y="17" width="6" height="6" fill="#3A3A3F"/><rect x="9" y="17" width="6" height="6" fill="#EDEBE6"/><rect x="17" y="17" width="6" height="6" fill="#EDEBE6"/></svg>
+      <span>CRATEFIELD</span>
+    </div>
+    <h1>A modular backend in Rust.<br><span>Fits almost every app.</span></h1>
+    <div class="bottom">
+      <div>MIT · RUST, WASM32 · 10 CRATES · ONE DATABASE PER TENANT</div>
+      <div></div>
+    </div>
+  </div>
+  <div class="rule"></div>
+</div>
+<script>
+(function () {
+  var lit = { 1: 1, 4: 1, 6: 1, 11: 1, 13: 1 };
+  var field = document.getElementById('field');
+  for (var i = 0; i < 16; i++) {
+    var cell = document.createElement('i');
+    if (lit[i]) cell.className = 'on';
+    field.appendChild(cell);
+  }
+  document.documentElement.setAttribute('data-og-ready', '1');
+})();
+</script>
+</body>
+</html>

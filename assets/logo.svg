@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="Cratefield">
+  <rect width="24" height="24" fill="#0A0A0B"/>
+  <rect x="1" y="1" width="6" height="6" fill="#EDEBE6"/>
+  <rect x="9" y="1" width="6" height="6" fill="#EDEBE6"/>
+  <rect x="17" y="1" width="6" height="6" fill="#3A3A3F"/>
+  <rect x="1" y="9" width="6" height="6" fill="#EDEBE6"/>
+  <rect x="9" y="9" width="6" height="6" fill="#4C6FFF"/>
+  <rect x="17" y="9" width="6" height="6" fill="#EDEBE6"/>
+  <rect x="1" y="17" width="6" height="6" fill="#3A3A3F"/>
+  <rect x="9" y="17" width="6" height="6" fill="#EDEBE6"/>
+  <rect x="17" y="17" width="6" height="6" fill="#EDEBE6"/>
+</svg>
