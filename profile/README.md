@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Cratefield/.github/main/assets/org-banner.png" alt="Cratefield — a managed backend in Rust. Fits almost every app." width="100%">
+  <img src="https://raw.githubusercontent.com/Cratefield/.github/main/assets/org-banner.png" alt="Cratefield — the boring 70% of a backend, in about a minute." width="100%">
 </p>
 
 <p align="center">
@@ -14,9 +14,9 @@
     <a href="https://cratefield.com/platform/">Platform</a> &nbsp;·&nbsp;
     <a href="https://cratefield.com/pricing/">Pricing</a> &nbsp;·&nbsp;
     <a href="https://cratefield.com/isolation/">Isolation</a> &nbsp;·&nbsp;
-    <a href="https://cratefield.com/architecture/">Architecture</a> &nbsp;·&nbsp;
-    <a href="https://cratefield.com/modules/">Modules</a> &nbsp;·&nbsp;
-    <a href="https://cratefield.com/vs-supabase/">vs Supabase</a> &nbsp;·&nbsp;
+    <a href="https://cratefield.com/technology/architecture/">Architecture</a> &nbsp;·&nbsp;
+    <a href="https://cratefield.com/technology/modules/">Modules</a> &nbsp;·&nbsp;
+    <a href="https://cratefield.com/technology/vs-supabase/">vs Supabase</a> &nbsp;·&nbsp;
     <a href="https://cratefield.com/llms.txt">llms.txt</a>
   </sub>
 </p>
@@ -39,7 +39,7 @@ This matters more than anything else on this page, so it is first.
 
 | | What it is | Status |
 | :--- | :--- | :--- |
-| **Harness** | The open-source Rust core. Ten crates, MIT, in [`Cratefield/harness`](https://github.com/Cratefield/harness). Readable and runnable today. | `SHIPPING` |
+| **Harness** | The open-source Rust core. Eighteen crates, MIT, in [`Cratefield/harness`](https://github.com/Cratefield/harness). Readable and runnable today. | `SHIPPING` |
 | **Cratefield** | The managed service: builds, migrations, secrets, domains, certificates and monitoring, in either of two deployment modes. | `PLANNED` |
 
 The managed service is not built. Not a line of it. Everything on the site and
@@ -151,7 +151,7 @@ The exit is documented: the `Database` port already accepts real Postgres, and
 the same modules run as a native binary. Both are `DESIGNED`, not `SHIPPING`.
 
 The full comparison, including where Supabase is the better answer, is at
-[cratefield.com/vs-supabase](https://cratefield.com/vs-supabase/).
+[cratefield.com/technology/vs-supabase](https://cratefield.com/technology/vs-supabase/).
 
 ---
 
@@ -176,7 +176,7 @@ The roadmap is the issue tracker. There is no private version of it.
 | :--- | :--- |
 | [**website**](https://github.com/Cratefield/website) | [cratefield.com](https://cratefield.com). Static HTML, no build step, no dependencies |
 | **.github** | This page and the mark |
-| [**harness**](https://github.com/Cratefield/harness) | The open-source Rust core. Ten crates, MIT. Moved here from the Factory Zero organisation in September 2026 |
+| [**harness**](https://github.com/Cratefield/harness) | The open-source Rust core. Eighteen crates, MIT. Moved here from the Factory Zero organisation in September 2026 |
 
 ---
 
