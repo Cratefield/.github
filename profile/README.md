@@ -39,7 +39,7 @@ This matters more than anything else on this page, so it is first.
 
 | | What it is | Status |
 | :--- | :--- | :--- |
-| **Harness** | The open-source Rust core. Eighteen crates, MIT, in [`Cratefield/harness`](https://github.com/Cratefield/harness). Readable and runnable today. | `SHIPPING` |
+| **Harness** | The open-source Rust core. Nineteen crates, MIT, in [`Cratefield/harness`](https://github.com/Cratefield/harness). Readable and runnable today. | `SHIPPING` |
 | **Cratefield** | The managed service: builds, migrations, secrets, domains, certificates and monitoring, in either of two deployment modes. | `PLANNED` |
 
 The managed service is not built. Not a line of it. Everything on the site and
@@ -176,7 +176,7 @@ The roadmap is the issue tracker. There is no private version of it.
 | :--- | :--- |
 | [**website**](https://github.com/Cratefield/website) | [cratefield.com](https://cratefield.com). Static HTML, no build step, no dependencies |
 | **.github** | This page and the mark |
-| [**harness**](https://github.com/Cratefield/harness) | The open-source Rust core. Eighteen crates, MIT. Moved here from the Factory Zero organisation in September 2026 |
+| [**harness**](https://github.com/Cratefield/harness) | The open-source Rust core. Nineteen crates, MIT. Moved here from the Factory Zero organisation in September 2026 |
 
 ---
 
